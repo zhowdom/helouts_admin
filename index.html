@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>科研建筑智慧运营平台</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script>
+  "object" != typeof ue || "object" != typeof ue.interface ? ("object" != typeof ue && (ue = {}), ue.interface = {}, ue.interface.broadcast = function(e, t) {
+    if ("string" == typeof e) {
+      var o = [e, ""];
+      void 0 !== t && (o[1] = t);
+      var n = encodeURIComponent(JSON.stringify(o));
+      "object" == typeof history && "function" == typeof history.pushState ? (history.pushState({}, "", "#" + n), history.pushState({}, "", "#" + encodeURIComponent("[]"))) : (document.location.hash = n, document.location.hash = encodeURIComponent("[]"))
+    }
+  }) : function(e) {
+    ue.interface = {}, ue.interface.broadcast = function(t, o) {
+      "string" == typeof t && (void 0 !== o ? e.broadcast(t, JSON.stringify(o)) : e.broadcast(t, ""))
+    }
+  }(ue.interface), (window.ue4 = ue.interface.broadcast);
+  window.ue = ue;
+  // for debugger
+window.ue = ue;
+  </script>
